@@ -1,0 +1,45 @@
+<script>document.write('<script src = "http://'+(location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/JS/script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <form action="">
+            <input name="display" class="calculator-display" type="text" readonly>
+        </form>
+        <div class="container">
+            <div data-all-clear class="btn-action" onclick="clearAll()">C</div>
+            <div data-delete class="btn-action" onclick="clearLast()"><svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.72575 0.129158C8.55313 0.209135 8.29927 0.375242 8.16726 0.498283C7.7357 0.879713 0.460121 9.76949 0.307806 10.0956C-0.103444 10.9753 -0.103444 11.9658 0.312883 12.8948C0.475353 13.2454 7.83217 22.2152 8.22819 22.5351C9.3807 23.4702 10.9648 22.9411 11.5537 21.4277C11.8381 20.6895 11.8431 19.8712 11.5639 19.0899C11.442 18.7639 11.2237 18.4747 9.59902 16.4876L7.77124 14.2605H15.3108C20.5555 14.2605 22.9418 14.2421 23.1551 14.1928C24.6528 13.8606 25.4449 11.8551 24.7391 10.1694C24.47 9.53571 23.7745 8.9205 23.1804 8.78516C23.0078 8.74824 20.1748 8.72363 15.3362 8.72363H7.77124L9.57871 6.52118C11.2034 4.55252 11.4065 4.28182 11.5436 3.925C12.0818 2.53463 11.6197 0.922779 10.4875 0.246048C10.1321 0.0307255 10.0763 0.0184212 9.57364 0.00611687C9.11162 -0.0123386 8.98976 0.00611687 8.72575 0.129158Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="btn-action" onclick="result()">=</div>
+            <div class="btn-matematical-operation" onclick="insert('+')" >+</div>
+            <div class="btn-number" onclick="insert('1')">1</div>
+            <div class="btn-number" onclick="insert('2')">2</div>
+            <div class="btn-number" onclick="insert('3')">3</div>
+            <div class="btn-matematical-operation" onclick="insert('-')">-</div>
+            <div class="btn-number" onclick="insert('4')">4</div>
+            <div class="btn-number" onclick="insert('5')">5</div>
+            <div class="btn-number" onclick="insert('6')">6</div>
+            <div class="btn-matematical-operation" onclick="insert('*')">*</div>
+            <div class="btn-number" onclick="insert('7')">7</div>
+            <div class="btn-number" onclick="insert('8')">8</div>
+            <div class="btn-number" onclick="insert('9')">9</div>
+            <div class="btn-matematical-operation" onclick="insert('/')">/</div>
+            <div></div>
+            <div class="btn-number" onclick="insert('0')">0</div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+</body>
+</html>
